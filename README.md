@@ -1,9 +1,9 @@
 # ⚽ 90 Dakika - Futbol Efsaneleri Blogu (Web-Blog)
 
-<img width="1975" height="1392" alt="image" src="https://github.com/user-attachments/assets/4c9a8021-8ac7-42ca-b518-872be6f4028b" /><img width="1981" height="1388" alt="image" src="https://github.com/user-attachments/assets/62a4a19e-2d0f-4d58-a87b-27260d72ac1d" />
-
+<img width="1975" height="1392" alt="image" src="https://github.com/user-attachments/assets/4c9a8021-8ac7-42ca-b518-872be6f4028b" />
 
 Bu proje, efsanevi futbolcular (Zidane, Pelé, Maradona), unutulmaz maçlar ve modern futbol taktikleri üzerine kurulu, statik ve modern bir blog web sitesidir. Kullanıcı deneyimini ön planda tutan karanlık tema (dark-theme) odaklı bir tasarıma sahiptir.
+<img width="1981" height="1388" alt="image" src="https://github.com/user-attachments/assets/62a4a19e-2d0f-4d58-a87b-27260d72ac1d" />
 
 ---
 
