@@ -30,6 +30,8 @@ Projeyi yerel ortamınızda çalıştırmak oldukça basittir. Herhangi bir sunu
    git clone [https://github.com/25020091007EnisOngencc/Web-Blog.git](https://github.com/25020091007EnisOngencc/Web-Blog.git)
 
 2. Klonladığınız klasörün içindeki blog.html dosyasını tercih ettiğiniz bir web tarayıcısında (Chrome, Edge, Firefox vb.) açın.
+   
+---
 
 💡 Önemli Not: Arka plan videosunun yerel ortamınızda sorunsuz çalışması için, blog.html içerisindeki <source src="..."> etiketinde bulunan video dosya yolunu bilgisayarınızdaki geçerli bir video yoluyla değiştirmeniz veya bir URL eklemeniz gerekebilir.
 
