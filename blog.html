@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="tr" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Futbol efsaneleri ve unutulmaz anlar üzerine bir blog">
+    <title>Futbol Efsaneleri · Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
+    <style>
+      .blog-header-logo { font-family: "Playfair Display", Georgia, "Times New Roman", serif; font-size: 2.25rem; }
+      .nav-scroller { position: relative; z-index: 2; height: 2.75rem; overflow-y: hidden; }
+      .nav-scroller .nav { display: flex; flex-wrap: nowrap; padding-bottom: 1rem; margin-top: -1px; overflow-x: auto; text-align: center; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+      .blog-post { margin-bottom: 4rem; }
+      .blog-post-title { margin-bottom: .25rem; font-size: 2.5rem; }
+      .blog-post-meta { margin-bottom: 1.25rem; color: #727272; }
+
+      /* Video Arka Plan Ayarları */
+      body { background-color: transparent !important; margin: 0; padding: 0; overflow-x: hidden; }
+      
+      .video-bg {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
+        z-index: -1; 
+        overflow: hidden;
+      }
+      
+      .video-bg video {
+        min-width: 100%; 
+        min-height: 100%; 
+        object-fit: cover;
+      }
+
+      /* İçeriğin arkasını kapatmak ve kenarları boş bırakmak için */
+      .content-wrapper { 
+        background-color: transparent; 
+        position: relative; 
+        z-index: 1; 
+        min-height: 100vh;
+      }
+      
+      /* Sadece yazıların olduğu orta bloğa renk veriyoruz */
+      .container { 
+        background-color: #1a1d20; 
+        box-shadow: 0 0 50px rgba(0,0,0,0.8);
+      }
+
+      .bg-body-tertiary, .bg-body-secondary {
+        background-color: #2b3035 !important;
+      }
+
+      /* --- MODAL STİLLERİ --- */
+      .modal-content {
+        background-color: rgba(33, 37, 41, 0.98);
+        border: 1px solid #444;
+        border-radius: 1.25rem;
+      }
+      .btn-primary {
+        background-color: #198754; 
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color: #146c43;
+      }
+      .form-control-user {
+        border-radius: 10rem;
+        padding: 1.25rem;
+        background-color: #2b3035;
+        border: 1px solid #495057;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+
+<div class="video-bg">
+  <video autoplay loop muted playsinline>
+    <source src="c:\Users\özcan\Downloads\stadium_ambient.mp4" type="video/mp4">
+    Tarayıcınız video etiketini desteklemiyor.
+  </video>
+</div>
+
+<div class="content-wrapper">
+<div class="container">
+  <header class="border-bottom lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="link-success fw-bold text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#subscribeModal">Abone Ol</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-body-emphasis text-decoration-none" href="#">90 Dakika</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary me-3" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+        </a>
+        <button class="btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#registerModal">Üye Olmak</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-3 border-bottom">
+    <nav class="nav nav-underline justify-content-between">
+      <a class="nav-item nav-link link-body-emphasis" href="#">Efsaneler</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Premier Lig</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">La Liga</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Şampiyonlar Ligi</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Transferler</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Analiz</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Dünya Kupası</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Tarih</a>
+    </nav>
+  </div>
+</div>
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1200&h=400&auto=format&fit=crop'); background-size: cover; background-position: center;">
+    <div class="col-lg-6 px-0 position-relative z-index-1">
+      <h1 class="display-4 fst-italic text-white">Messi vs Ronaldo: Son Dans Bitti mi?</h1>
+      <p class="lead my-3 text-light">Futbol tarihinin en büyük rekabeti Avrupa sahalarından uzaklaşmış olsa da, bıraktıkları miras istatistiklerin ötesinde bir anlam taşıyor. Biri yeteneğin, diğeri azmin simgesi oldu. Peki, gerçek "G.O.A.T" kim?</p>
+      <p class="lead mb-0"><a href="#" class="text-white fw-bold text-decoration-underline">Analizi okumaya devam edin...</a></p>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary-emphasis">Brezilya</strong>
+          <h3 class="mb-0">Pelé'nin Mirası</h3>
+          <div class="mb-1 text-body-secondary">29 Aralık</div>
+          <p class="card-text mb-auto">3 Dünya Kupası kazanan tek oyuncu olan Pelé, futbolun neden "Güzel Oyun" olduğunu dünyaya öğreten isimdi. 10 numara formasını efsaneleştiren adamdı.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">Okumaya devam edin</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=200&h=250&auto=format&fit=crop" alt="Futbol Topu" width="200" height="250" style="object-fit: cover;">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success-emphasis">Taktik</strong>
+          <h3 class="mb-0">Total Futbol</h3>
+          <div class="mb-1 text-body-secondary">11 Nisan</div>
+          <p class="mb-auto">Johan Cruyff ve Rinus Michels'in futbolu kökten değiştiren felsefesi: Pozisyonsuz oyun, alan daraltma ve sürekli hareketlilik üzerine kurulu bir devrim.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">Okumaya devam edin</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=200&h=250&auto=format&fit=crop" alt="Taktik Tahtası Kavramı" width="200" height="250" style="object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">Haftanın Portresi</h3>
+
+      <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1">Zinedine Zidane: Yeşil Sahanın Sanatçısı</h2>
+        <p class="blog-post-meta">25 Nisan, 2026, <a href="#">Enis</a> tarafından</p>
+
+        <p>Bazı futbolcular koşar, bazıları ise dans eder. Zidane, 1998 Dünya Kupası ve o efsanevi Şampiyonlar Ligi finali golüyle futbolun sadece fizik değil, bir zeka ve zarafet oyunu olduğunu kanıtladı. Real Madrid formasıyla Bayer Leverkusen'e attığı o vole, futbol tarihindeki kusursuzluğun anıtı gibidir.</p>
+        <hr>
+        <p>Top ayağına geldiğinde zamanın yavaşladığı hissini veren nadir oyunculardan biriydi. Cezayir asıllı Fransız yıldız, kariyerini dramatik bir şekilde 2006 Dünya Kupası finalindeki o ünlü kafa atışıyla noktalasa da, yeşil sahadaki teknik kapasitesi ve liderlik vasfı bugün bile yeni nesil orta sahalar için bir referans noktası olmaya devam ediyor.</p>
+        
+        <blockquote>
+          <p>"Topu kontrol etmek bir sanattır, onu paylaşmak ise cömertliktir. Zidane her ikisine de sahipti. Topu ona verin ve sadece izleyin."</p>
+        </blockquote>
+
+        <p>Futbol zekasını saha kenarına da taşıyan Zidane, teknik direktör olarak Real Madrid ile üst üste kazandığı 3 Şampiyonlar Ligi kupasıyla, hem oyuncu hem de hoca olarak futbolun zirvesine yerleşen nadir isimlerden biri oldu.</p>
+
+        <h3>Kariyer Başarıları</h3>
+        <ul>
+          <li><strong>Ballon d'Or:</strong> 1998 yılının tartışmasız en iyi oyuncusu.</li>
+          <li><strong>Dünya Kupası:</strong> 1998'de Fransa'ya kupayı getiren finaldeki iki kafa golü.</li>
+          <li><strong>Şampiyonlar Ligi:</strong> Bayer Leverkusen'e sol ayağıyla attığı o unutulmaz vole.</li>
+          <li><strong>Teknik Direktörlük:</strong> Real Madrid ile 3 kez üst üste UEFA Şampiyonlar Ligi şampiyonluğu.</li>
+        </ul>
+
+        <h3>Efsanevi 10 Numaralar Karşılaştırması</h3>
+        <table class="table mb-4">
+          <thead>
+            <tr>
+              <th>Oyuncu</th>
+              <th>Oyun Stili</th>
+              <th>En Büyük Başarı</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Diego Maradona</td>
+              <td>Dribbling, Çeviklik & Liderlik</td>
+              <td>1986 Dünya Kupası Şampiyonluğu</td>
+            </tr>
+            <tr>
+              <td>Zinedine Zidane</td>
+              <td>Zarafet, Görüş & Top Kontrolü</td>
+              <td>EURO 2000 & 1998 DK Şampiyonluğu</td>
+            </tr>
+            <tr>
+              <td>Michel Platini</td>
+              <td>Oyun Kurma & Frikik Ustalığı</td>
+              <td>3 Kez Ballon d'Or (1983-1985)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="mt-4">İmza Hareketi: Rulet (Marseille Turn)</h3>
+        <p>Futbol lügatına adeta kendi markası olarak kazandırdığı tam turluk dönüş hareketi olan <em>"Rulet"</em>, Zidane'ın rakiplerini ne kadar zarif bir şekilde oyundan düşürebildiğinin en büyük kanıtıdır. Topu bir balerin edasıyla iki ayağı arasında sürükleyerek yaptığı bu estetik çalım, onun topla nasıl bütünleştiğini gösterir.</p>
+
+        <h3>Efsanelerin Gözünden Zidane</h3>
+        <p>Futbol dünyasının diğer büyük isimleri de onun sahadaki sihrini her zaman takdir etmişlerdir:</p>
+        <ul>
+          <li><strong>Ronaldinho:</strong> "Zidane futbol oynamıyor, adeta çimlerin üzerinde dans ediyor. Onun oyun görüşüne sahip olmak her futbolcunun hayalidir."</li>
+          <li><strong>Zlatan Ibrahimovic:</strong> "O sahaya çıktığında diğer 10 kişi aniden daha iyi oynamaya başlardı. O tam anlamıyla başka bir gezegendendi."</li>
+          <li><strong>Pelé:</strong> "O, geçtiğimiz 10 yılın ustasıdır. Oyunun kalbidir."</li>
+        </ul>
+      </article>
+
+      <article class="blog-post mt-5">
+        <h2 class="display-5 link-body-emphasis mb-1">Modern Futbolda Kalecinin Evrimi: 11. Alan Oyuncusu</h2>
+        <p class="blog-post-meta">28 Nisan, 2026, <a href="#">Enis</a> tarafından</p>
+
+        <p>Eskiden bir kaleciden beklenen tek şey, topun çizgiyi geçmesini engellemekti. Ancak günümüz futbolunda kaleciler, oyun kurmanın ve taktiksel dizilişin ilk temel taşı haline geldiler. Manuel Neuer ile zirveye ulaşan <em>"Sweeper-Keeper"</em> (Libero Kaleci) rolü, meşin yuvarlağa ayakla hükmetmeyi zorunlu kılıyor.</p>
+        <hr>
+        <p>Pep Guardiola, Jürgen Klopp gibi teknik adamların modern taktiklerinde stoperlerin arasına girerek oyun kuran, takım baskı yediğinde soğukkanlılıkla pas dağıtan kaleciler, adeta 11. bir alan oyuncusu gibi işlev görüyor. Ederson ve Alisson Becker gibi isimler, uzun isabetli paslarıyla sadece defanstan çıkmayı sağlamıyor, aynı zamanda saniyeler içinde ölümcül kontrataklar başlatabiliyorlar.</p>
+        
+        <h3>Değişen Beklentiler</h3>
+        <ul>
+          <li><strong>Ayak Hakimiyeti:</strong> Artık elit seviyedeki kalecilerin pas isabet oranları, orta saha oyuncularıyla yarışıyor.</li>
+          <li><strong>Alan Savunması:</strong> Savunma arkasına atılan topları süpürmek için ceza sahası dışına çıkma cesareti ve zamanlama yeteneği.</li>
+          <li><strong>Baskı Altında Karar Verme:</strong> Rakip ön alan baskısı (pressing) yaparken panikle topu uzaklaştırmak yerine boş adamı bulabilme.</li>
+        </ul>
+
+        <p>Eğer bir takım modern anlamda topa sahip olma (possession) oyunu oynamak istiyorsa, bu vizyona ayak uyduramayan geleneksel bir çizgi kalecisiyle başarılı olması neredeyse imkansızdır. Futbol değişiyor ve taktiksel evrimin en net görüldüğü yer kesinlikle iki direğin arası.</p>
+      </article>
+
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn btn-outline-success rounded-pill" href="#">Eski Yazılar</a>
+        <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Yeni Yazılar</a>
+      </nav>
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-body-tertiary rounded">
+          <h4 class="fst-italic">Hakkında</h4>
+          <p class="mb-0">90 Dakika, futbolun sadece bir oyun değil, bir yaşam biçimi, bir kültür ve sanat olduğuna inananların buluşma noktasıdır. Enis'in kaleminden yeşil sahaların unutulmaz hikayeleri.</p>
+        </div>
+
+        <div>
+          <h4 class="fst-italic">Popüler Yazılar</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=100&h=96&auto=format&fit=crop" alt="Diego Maradona #10" width="100%" height="96" style="object-fit: cover; border-radius: 6px;">
+                <div class="col-lg-8">
+                  <h6 class="mb-0">Maradona'nın "Tanrı'nın Eli" Golü</h6>
+                  <small class="text-body-secondary">22 Haziran, 1986</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=100&h=96&auto=format&fit=crop" alt="Ronaldinho Gaucho Joga Bonito" width="100%" height="96" style="object-fit: cover; border-radius: 6px;">
+                <div class="col-lg-8">
+                  <h6 class="mb-0">Ronaldinho'nun Bernabéu'da Alkışlanması</h6>
+                  <small class="text-body-secondary">19 Kasım, 2005</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Lig Arşivleri</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="#">Premier Lig Arşivi</a></li>
+            <li><a href="#">Serie A Nostalji</a></li>
+            <li><a href="#">Süper Lig Tarihi</a></li>
+            <li><a href="#">Bundesliga Efsaneleri</a></li>
+          </ol>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Başka yerlerde</h4>
+          <ol class="list-unstyled">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Sosyal</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="py-5 text-center text-body-secondary bg-body-tertiary mt-5">
+  <p>"Futbol basit bir oyundur; zor olan ise basit futbol oynamaktır." - Johan Cruyff</p>
+  <p class="mb-0"><a href="#">Sahaya Dön (Başa Dön)</a></p>
+</footer>
+</div>
+
+<div class="modal fade" id="subscribeModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-5">
+      <div class="text-center">
+        <h1 class="h4 text-white mb-3">Bültene Abone Ol!</h1>
+        <p class="text-secondary small mb-4">En son efsane hikayeleri ve maç analizleri her hafta e-postana gelsin.</p>
+      </div>
+      <form class="user">
+        <div class="mb-3">
+          <input type="text" class="form-control form-control-user" placeholder="Adınız Soyadınız">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control form-control-user" placeholder="E-posta Adresiniz">
+        </div>
+        <button type="submit" class="btn btn-primary w-100 rounded-pill py-2 fw-bold">Hemen Abone Ol</button>
+      </form>
+      <hr>
+      <div class="text-center">
+        <p class="small text-secondary m-0">Bilgileriniz bizimle güvende. Sadece futbol konuşacağız!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-5">
+      <div class="text-center"><h1 class="h4 text-white mb-4">Ailemize Üye Olun!</h1></div>
+      <form class="user">
+        <div class="row mb-3">
+          <div class="col-sm-6 mb-3 mb-sm-0"><input type="text" class="form-control form-control-user" placeholder="Ad"></div>
+          <div class="col-sm-6"><input type="text" class="form-control form-control-user" placeholder="Soyad"></div>
+        </div>
+        <div class="mb-3"><input type="email" class="form-control form-control-user" placeholder="E-posta"></div>
+        <div class="mb-3"><input type="password" class="form-control form-control-user" placeholder="Şifre"></div>
+        <button type="submit" class="btn btn-primary w-100 rounded-pill py-2">Üyeliği Tamamla</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
